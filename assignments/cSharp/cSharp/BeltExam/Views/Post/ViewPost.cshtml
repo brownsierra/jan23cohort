@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "View Post";
+}
+@model Post
+
+@await Html.PartialAsync("_Navbar")
+<main id="viewbody">
+    <div id="leftofview">
+        <h2>@Model.Title</h2>
+        <img class="viewphoto" src="@Model.Img" alt="Post Photo">
+    </div>
+    <div>
+        <p>By: @Model.Author</p>
+        <p>Medium: @Model.Medium</p>
+            @* @if(@Model.ForSale == 1) {
+                <p>For Sale</p>
+            }
+            else {
+                <p>Not For Sale</p>
+            } *@
+        <p></p>
+    <div id="vieweditanddeletebuttons" class="d-flex">
+        <form asp-action="DeleteItem" asp-route-Postid="@Model.PostId" asp-controller="Post" method="post">
+            <input type="submit" class="btn btn-danger" value="Delete">
+        </form>
+        <a href="/post/@Model.PostId/edit" class="btn btn-primary">Edit</a>
+    </div>
+    </div>
+</main>

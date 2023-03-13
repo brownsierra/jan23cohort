@@ -1,0 +1,57 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  width: 970px;
+  margin: auto;
+}
+
+main {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 970px;
+  justify-content: space-evenly;
+}
+.formtitle {
+  margin-bottom: 25px;
+}
+
+section {
+  margin-bottom: 10px;
+}
+
+
+
+/***SUCCESS PAGE***/
+#successbody {
+  display: flex;
+  flex-direction: column;
+}
+
+#logout {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+#success {
+  text-align: center;
+  margin-top: 170px;
+  font-size: 80px;
+}

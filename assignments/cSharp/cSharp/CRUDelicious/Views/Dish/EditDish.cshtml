@@ -1,0 +1,48 @@
+@{
+    ViewData["Title"] = "Edit Dish";
+}
+@model Dish
+
+
+<h1 class="crudheader">Edit @Model.Name</h1>
+<nav id="nav">
+    <a href="/" id="adddishhome">Home</a>
+    <h2>|</h2>
+    <a href="" id="adddishadddish">Add a Dish</a>
+</nav>
+<form action="/dish/@Model.DishId/update" method="post" id="editform">
+    <div id="adddishleftdiv">
+    <section>
+        <label for="Chef">Chef</label>
+        <input type="text" name="Chef" value="@Model.Chef">
+        <span asp-validation-for="Chef"></span>
+    </section>
+        <section>
+        <label for="Name">Name</label>
+        <input type="text" name="Name" value="@Model.Name">
+        <span asp-validation-for="Name"></span>
+    </section>
+    <section>
+        <label for="Calories">Calories</label>
+        <input type="number" name="Calories" value="@Model.Calories">
+        <span asp-validation-for="Calories"></span>
+    </section>
+    </div>
+    <div>
+        <label for="Tastiness">Tastiness</label>
+        <select asp-for="Tastiness" value="@Model.Tastiness">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>            
+        </select>
+    </div>
+    <div>
+        <section id="des">
+            <label for="Description">Description</label>
+            <textarea asp-for="Description" value="@Model.Description"></textarea>
+        </section>
+        <button>Edit Dish</button>
+    </div>
+</form>

@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Add Chef";
+}
+@model Chef
+
+@await Html.PartialAsync("_Navbar")
+<h1 class="header">Add a chef</h1>
+<hr>
+<form action="/addchef" method="post" id="Addchefform">
+    <section>
+        <label asp-for="FirstName">First Name:</label>
+        <input type="text" asp-for="FirstName">
+        <span asp-validation-for="FirstName"></span>
+    </section>
+    <section>
+        <label asp-for="LastName">Last Name:</label>
+        <input type="text" asp-for="LastName">
+        <span asp-validation-for="LastName"></span>
+    </section>
+        <section>
+        <label asp-for="DateOfBirth">Date of Birth:</label>
+        <input type="date" asp-for="DateOfBirth">
+        <span asp-validation-for="DateOfBirth"></span>
+    </section>
+    <button>Add Chef</button>
+</form>

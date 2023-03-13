@@ -1,0 +1,28 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/***REGISTER PAGE***/
+#registerpagebody {
+  box-sizing: border-box;
+}
+.bg-image {
+  background-image: url('https://res.cloudinary.com/mhmd/image/upload/v1555917661/art-colorful-contemporary-2047905_dxtao7.jpg');
+  background-size: cover;
+  background-position: center center;
+}

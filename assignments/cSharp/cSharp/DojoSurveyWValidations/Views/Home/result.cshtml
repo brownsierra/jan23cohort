@@ -1,0 +1,14 @@
+    @{
+    ViewData["Title"] = "Results";
+    }
+    @model DojoStudent;
+    
+    
+    <main>
+        <h1 id="submittedheader">Submitted Info</h1>
+        <h2>Name: @Model.Name</h2>
+        <h2>Dojo Location: @Model.Location</h2>
+        <h2>Favorite Language: @Model.FavLang</h2>
+        <h2>Comment (Optional): @Model.Comment</h2>
+        <input type="submit" value="Go Back" id="submit"/>
+    </main>

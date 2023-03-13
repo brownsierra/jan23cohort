@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+@model List<Post>
+@await Html.PartialAsync("_Navbar")
+
+<main id="dashboardrows">
+@{
+    foreach(Post p in Model) {
+        <div id="postdiv">
+            <img class="dashboardpostpic" src="@p.Img" alt="Post Image">
+            <h4><a href="post/@p.PostId/view">@p.Title</a></h4>
+            <h3>By: @p.Author.FirstName</h3>
+            <h5>Medium: @p.Medium</h5>
+                @if(@p.ForSale == true) {
+                    <h6>For Sale</h6>
+                }
+                else {
+                    <h6>Not For Sale</h6>
+                }
+            <h6>By: @p.Author</h6>
+            <div id="editanddeletedashboard">
+                <a href="post/@p.PostId/edit" class="dashbutton" >Edit</a>
+                <form asp-action="DeleteItem" asp-route-Postid="@p.PostId" asp-controller="Post" method="post">
+                    <input type="submit" class="dashbutton" value="Delete">
+                </form>
+            </div>
+        </div>
+    }
+}
+</main>

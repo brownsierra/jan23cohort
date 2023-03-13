@@ -1,0 +1,107 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  width: 970px;
+  margin: auto;
+}
+
+/**NAVBAR PARTIAL**/
+#Navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.navlink {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.header {
+  text-align: center;
+}
+
+
+/**ADDCHEF**/
+#Addchefform {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  align-items: center;
+}
+
+
+
+
+/**ADDDISH**/
+.columndishform {
+  display: flex;
+  flex-direction: column;
+}
+#Adddishform {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+section {
+  margin-bottom: 20px;
+}
+table {
+  display: flex;
+  flex-direction: row;
+}
+tbody {
+  width: 970px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/***CHEFS ROSTER***/
+.cheftable {
+  display: flex;
+  flex-direction: column;
+}
+.tablerow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+tr {
+  width: 970px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+th {
+  width: 300px;
+}
+td {
+  width: 300px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#adddishform {
+  display: flex;
+  flex-direction: row;
+}

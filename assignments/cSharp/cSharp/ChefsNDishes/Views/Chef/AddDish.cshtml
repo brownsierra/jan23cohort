@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Add Dish";
+}
+@model MyViewModel
+@await Html.PartialAsync("_Navbar")
+<h1 class="header">Add a dish</h1>
+<hr>
+@* @await Html.PartialAsync("_Adddish") *@
+    <form action="/createdish" method="post" id="adddishform">
+    <div id="nameandcals">
+        <section class="forminput">
+            <label asp-for="Dish.Name">Name of Dish</label>
+            <input asp-for="Dish.Name">
+            <span asp-validation-for="Dish.Name"></span>
+        </section>
+        <section id="caloriesinput">
+            <label asp-for="Dish.Calories"># of Calories</label>
+            <input type="number" asp-for="Dish.Calories">
+            <span asp-validation-for="Dish.Calories"></span>
+        </section>
+    </div>
+    <div id="tastiness">
+    <label asp-for="Dish.Tastiness"></label>
+    <select asp-for="Dish.Tastiness" id=tastenum>
+            <option value="1" class="tastenum">1</option>
+            <option value="2" class="tastenum">2</option>
+            <option value="3" class="tastenum">3</option>
+            <option value="4" class="tastenum">4</option>
+            <option value="5" class="tastenum">5</option>            
+    </select>
+    </div>
+    <div>
+    @* @await Html.PartialAsync("_ChefsName", Model.ListofChefs) *@
+    <section>
+        <select asp-for="Dish.ChefId" id="">
+            @foreach(Chef c in Model.ListOfChefs) {
+                <option value="@c.ChefId">@c.FirstName @c.LastName</option>
+                @* Console.WriteLine("================================================"); *@
+                @* Console.WriteLine($"{@c.ChefId}"); *@
+            }
+        </select>
+        <span asp-validation-for="Dish.ChefId"></span>
+    </section> 
+    <button>Add Dish</button>
+    </div>
+</form>

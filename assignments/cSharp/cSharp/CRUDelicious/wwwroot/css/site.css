@@ -1,0 +1,137 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  margin: 0 auto;
+}
+
+/***DASHBOARD***/
+.crudheader {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#homehome {
+text-decoration: none;
+color: black;
+margin-right: 10px;
+}
+#homeadddish {
+  margin-left: 10px;
+}
+hr {
+  width: 450px;
+  background-color: black;
+}
+
+
+/***ADD DISH***/
+#adddishform {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+#nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+#adddishhome {
+  margin-right: 10px;
+}
+#adddishadddish {
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+#adddishleftdiv {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+.forminput {
+  display: flex;
+  flex-direction: column;
+}
+#caloriesinput {
+  display: flex;
+  flex-direction: column;
+}
+#desinput {
+  display: flex;
+  flex-direction: column;
+}
+textarea {
+  height: 160px;
+  width: 230px;
+}
+#tastenum {
+  width: 100%;
+  border: 2px solid black;
+  height: 40px;
+}
+#adddishbutton {
+  margin-top: 30px;
+  margin-left: 150px;
+}
+
+
+
+
+/***VIEW DISH***/
+#viewhome {
+  margin-right: 10px;
+}
+#viewadddish {
+  margin-left: 10px;
+}
+#viewbuttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#viewdescription {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+#viewcals {
+  margin-bottom: 15px;
+}
+#redbutton {
+  background-color: rgb(224, 140, 140);
+  width: 75px;
+  box-shadow: 2px 2px black;
+}
+#bluebutton {
+  background-color: rgb(178, 196, 255);
+  width: 75px;
+  box-shadow: 2px 2px black;
+}
+
+
+/****EDIT DISH****/
+#editform {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#des {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,145 @@
+body {
+    width: 970px;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+a {
+    margin-left: 15px;
+    margin-right: 15px;
+    color:rgb(16, 92, 198);
+    font-weight: bold;
+    font-size: 23px;
+}
+#home {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-size: 45px;
+}
+#MainBodyRow {
+    display: flex;
+    flex-direction: row;
+}
+#LeftOfBody {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+}
+#lovecode {
+    margin-top: -8px;
+}
+#RightOfBody {
+    width: 600px;
+}
+
+
+/*PROJECTS*/
+#myProjectsHeader {
+    margin-bottom: 70px;
+}
+#projprojects {
+    color: black;
+    text-decoration: none;
+}
+.projimg {
+    height: 75%;
+    width: 70%;
+}
+#projbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#ProjectBoxes {
+    display: flex;
+    flex-direction: column;
+    height: 470px;
+    width: 800px;
+    overflow: auto;
+    border: 5px solid black;
+    padding: 15px;
+}
+
+.projrow {
+    display: flex;
+    flex-direction: row;
+    height: 180px;
+    margin-bottom: -15px;
+}
+#proj3img {
+    width: 78%;
+}
+#proj4img {
+    width: 78%;
+}
+#proj5img {
+    width: 65%;
+}
+
+.pheaderandparagraph {
+    margin-left: 25px;
+}
+/*CONTACT ME*/
+#contactheader {
+    color: black;
+    text-decoration: none;
+}
+#contactbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#SendButton {
+    width: 70px;
+    height: 30px;
+    border: 2px solid black;
+    box-shadow: 2px 3px black;
+    margin-top: 25px;
+    margin-left: 385px;
+}
+#name {
+    width: 350px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    height: 30px;
+}
+#nameid {
+    margin-right: 50px;
+}
+#email {
+    width: 350px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    height: 30px;
+}
+#emailid {
+    margin-right: 54px;    
+}
+#message {
+    width: 350px;
+    height: 150px;
+    border: 2px solid black;
+
+}
+#messageid {
+
+    margin-right: 32px;
+}
+.formdivs {
+    display: flex;
+    flex-direction: row;
+}

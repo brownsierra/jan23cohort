@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Chefs";
+}
+
+@model List<Chef>
+
+@await Html.PartialAsync("_Navbar")
+<h1 class="header">Check out our roster of chefs!</h1>
+<hr>
+<table class="cheftable table ">
+    <thead class="tablerow">
+        <th>Name</th>
+        <th>Age</th>
+        <th># of Dishes</th>
+    </thead>
+    <tbody>
+        @foreach (Chef c in Model)
+        {
+            <tr>
+                <td>@c.FirstName @c.LastName</td>
+                <td>@Chef.CalculateAge(c.DateOfBirth)</td>
+                <td>@c.AllDishes.Count</td>
+            </tr>
+        }
+    </tbody>
+</table>

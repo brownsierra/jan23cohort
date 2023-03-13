@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Edit Post";
+}
+@model Post
+
+@await Html.PartialAsync("_Navbar")
+<h1 class="postheader">Edit Post</h1>
+<form action="/post/@Model.PostId/update" method= "post" class="addpostform">
+    <section class="addpostformsection">
+        <label for="Img">Image (URL format please)</label>
+        <input  type="text" name="Img" value="@Model.Img">
+        <span asp-validation-for="Img"></span>
+    </section>
+    <section class="addpostformsection">
+        <label for="Title">Title</label>
+        <input  type="text" name="Title" value="@Model.Title">
+        <span asp-validation-for="Title"></span>
+    </section>
+    <section class="addpostformsection">
+        <label for="Medium">Medium</label>
+        <input type="text" name="Medium" value="@Model.Medium">
+        <span asp-validation-for="Medium"></span>
+    </section>
+    <section>
+        <input for="ForSale" type="checkbox">
+        <label for="ForSale">For Sale?</label>
+    </section>
+        <button class="addpostbutton">update</button>
+</form>

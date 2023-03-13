@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey Index</title>
+    <link rel="stylesheet" href="~/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;500;600&family=PT+Sans+Caption:wght@400;700&family=Roboto:wght@300;400;500;700&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>My user's name is @Context.Session.GetString("UserName")</h1>
+        <form action="result" method="post">
+            <div class="surveyfield">
+                <label for="YourName">Your Name:</label>
+                <input type="text" name="YourName" id="namebox">
+            </div>
+            <div class="surveyfield">
+                <label for="DojoLocation">Dojo Location:</label>
+                <select name="DojoLocation" id="DojoLocation">
+                    <option value="San Jose" class="dropdownitem">San Jose</option>
+                    <option value="Dallas" class="dropdownitem">Dallas</option>
+                    <option value="Seattle" class="dropdownitem">Seattle</option>
+                </select>
+            </div>
+            <div class="surveyfield">
+                <label for="FavLang">Favorite Language:</label>
+                <select name="FavLang" id="FavLang">
+                    <option value="C #" class="dropdownitem">C#</option>
+                    <option value="Java" class="dropdownitem">Java</option>
+                    <option value="Python" class="dropdownitem">Python</option>
+                </select>
+            </div>
+            <div id="commentsection">
+                <label for="Comment" id="commentlabel">Comment (optional):</label>
+                <textarea name="Comment" id="commentbox"></textarea>
+            </div>
+            <input type="submit" value="Submit" id="submit"/>
+        </form>
+    </main>
+</body>
+</html>

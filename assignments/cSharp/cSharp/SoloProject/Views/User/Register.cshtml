@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Register";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body id="registerpagebody">
+    <main>
+        <div>
+            @await Html.PartialAsync("_Register")
+            <h6>Already a member? <a href="/login">Log in</a></h6>
+        </div>
+        <div>
+            <h1>You're In For A Treat</h1>
+            <img src="~/images/images.jfif" alt="Cupcake Pic" class="img-fluid col-md-6 d-none d-md-flex bg-image">
+        </div>
+    </main>
+</body>
+</html>
