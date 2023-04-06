@@ -1,0 +1,60 @@
+@charset "ISO-8859-1";
+body {
+	width: 970px;
+	margin: auto;
+}
+h1 {
+	color: #085394;
+	margin-top: 60px;
+}
+table {
+	margin-top: 40px;
+}
+tbody {
+	width: 970px;
+	display: flex;
+	flex-direction: column;
+}
+tr {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#bottomofmain {
+	margin-top: 75px;
+}
+h2 {
+	color: #085394;
+}
+h5 {
+	color: #dc3545;
+}
+label {
+	font-weight: bold;
+}
+input {
+	border: 1px solid black;
+}
+textarea {
+	border: 1px solid black;
+	width: 300px;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	height: 350px;
+	justify-content: space-evenly;
+}
+#bottomofmain {
+	height: 600px;
+	margin-left: 100px;
+}
+button {
+	width: 70px;
+	font-weight: bold;
+	color: white;
+	background-color: #085394;
+}
+#goback {
+	text-decoration: none;
+}
