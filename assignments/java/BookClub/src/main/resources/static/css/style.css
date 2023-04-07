@@ -1,0 +1,57 @@
+@charset "ISO-8859-1";
+body {
+	width: 970px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.purpleheader {
+	color: #9900ff;
+	margin-bottom: 20px;
+}
+.input {
+	width: 200px;
+}
+label {
+	width: 200px;
+}
+section {
+
+	margin-bottom: 10px;
+}
+#logregrow {
+	display: flex;
+	flex-direction: row;
+}
+.userform {
+	margin-right: 50px;
+}
+
+
+
+
+.headerpart {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+tbody {
+	margin-top: 40px;
+	width: 970px;
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	
+}
+tr {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#addbookbody {
+	margin-top: 50px;
+}
+textarea {
+	width: 190px;
+	height: 100px;
+}
